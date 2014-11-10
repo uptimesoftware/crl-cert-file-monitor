@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uptime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.uptimesoftware.com/erdc/erdc erdc"
+	xmlns="http://www.uptimesoftware.com/erdc/erdc" xmlns:upt="http://www.uptimesoftware.com/erdc/erdc"
+	version="4.0" target_grouping="other">
+
+	<class>CRL Certificate Monitor</class>
+	<exec>JAVA_PLUGIN:UptimeSSLCertificateMonitor</exec>
+	<erdc_version>1.0</erdc_version>
+	<category>Network Service Monitors</category>
+	<category_related>Applications - Web Services</category_related>
+	<grid_info>
+		<supported_versions>7.3</supported_versions>
+		<supported_platforms>windows, linux</supported_platforms>
+		<upgrade_in_place>true</upgrade_in_place>
+		<requires_agent_scripts>false</requires_agent_scripts>
+	</grid_info>
+
+	<elements>
+		<element name="pathToCRL" parameter_type="input" data_type="string" gui_basic="1"
+			range_type="0">
+			<control_options> size:40 </control_options>
+			<default_value />
+			<short_description>URL or File path to CRL file</short_description>
+			<long_description>URL or File path to CRL file</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<string />
+			</gui_type>
+		</element>
+
+		<element name='certVersion' parameter_type='output' data_type='string' gui_basic='1'
+			range_type='0'>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<short_description>Cert Version</short_description>
+			<long_description>Certificate Version</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<string />
+			</gui_type>
+		</element>
+
+		<element name='certType' parameter_type='output' data_type='string' gui_basic='1'
+			range_type='0'>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<short_description>Cert Type</short_description>
+			<long_description>Certificate Type</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<string />
+			</gui_type>
+		</element>
+
+		<element name='sigAlgName' parameter_type='output' data_type='string' gui_basic='1'
+			range_type='0'>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<short_description>Signature Algo Name</short_description>
+			<long_description>Signature Algorithm Name</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<string />
+			</gui_type>
+		</element>
+
+		<element name='issuerName' parameter_type='output' data_type='string' gui_basic='1'
+			range_type='0'>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<short_description>Issuer Name</short_description>
+			<long_description>Issuer Details</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<string />
+			</gui_type>
+		</element>
+
+		<element name='thisUpdate' parameter_type='output' data_type='string' gui_basic='1'
+			range_type='0'>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<short_description>This Update</short_description>
+			<long_description>Not Before Date</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<string />
+			</gui_type>
+		</element>
+
+		<element name='nextUpdate' parameter_type='output' data_type='string' gui_basic='1'
+			range_type='0'>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<short_description>Next Update</short_description>
+			<long_description>Not After Date</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<string />
+			</gui_type>
+		</element>
+
+		<element name='expiryDays' parameter_type='output' data_type='integer' gui_basic='1'
+			range_type='0' units='days'>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<short_description>Remaining Days to Expiry</short_description>
+			<long_description>Remaining Days to Expiry</long_description>
+			<validation_rule />
+			<error_message />
+			<gui_type>
+				<integer />
+			</gui_type>
+		</element>
+	</elements>
+
+	<help>Parse a CRL file and capture Days Till Expiry & other cert fields</help>
+</uptime>

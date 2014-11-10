@@ -104,11 +104,11 @@ public class CRLCertFileMonitor extends Plugin {
 		@Override
 		public void monitor() {
 			logger.debug("Get X509CRL instance with a given CRL file URL.");
-			X509CRL crl = getX509CRLWithURL((String) inputs.get(HOSTNAME));
+			X509CRL crl = getX509CRLWithURL((String) inputs.get(PATH_TO_CRL));
 
 			if (crl == null) {
 				logger.debug("Try with local file path again.");
-				crl = getX509CRLWithLocalFilePath((String) inputs.get(HOSTNAME));
+				crl = getX509CRLWithLocalFilePath((String) inputs.get(PATH_TO_CRL));
 			}
 
 			if (crl == null) {

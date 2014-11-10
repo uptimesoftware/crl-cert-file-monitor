@@ -33,8 +33,8 @@
 			</gui_type>
 		</element>
 
-		<element name='certVersion' parameter_type='output' data_type='string' gui_basic='1'
-			range_type='0'>
+		<element name="certVersion" parameter_type="output" data_type="string" gui_basic="1"
+			range_type="0">
 			<control_options>size:8</control_options>
 			<default_value />
 			<short_description>Cert Version</short_description>
@@ -46,8 +46,8 @@
 			</gui_type>
 		</element>
 
-		<element name='certType' parameter_type='output' data_type='string' gui_basic='1'
-			range_type='0'>
+		<element name="certType" parameter_type="output" data_type="string" gui_basic="1"
+			range_type="0">
 			<control_options>size:8</control_options>
 			<default_value />
 			<short_description>Cert Type</short_description>
@@ -59,8 +59,8 @@
 			</gui_type>
 		</element>
 
-		<element name='sigAlgName' parameter_type='output' data_type='string' gui_basic='1'
-			range_type='0'>
+		<element name="sigAlgName" parameter_type="output" data_type="string" gui_basic="1"
+			range_type="0">
 			<control_options>size:8</control_options>
 			<default_value />
 			<short_description>Signature Algo Name</short_description>
@@ -72,8 +72,8 @@
 			</gui_type>
 		</element>
 
-		<element name='issuerName' parameter_type='output' data_type='string' gui_basic='1'
-			range_type='0'>
+		<element name="issuerName" parameter_type="output" data_type="string" gui_basic="1"
+			range_type="0">
 			<control_options>size:8</control_options>
 			<default_value />
 			<short_description>Issuer Name</short_description>
@@ -85,8 +85,8 @@
 			</gui_type>
 		</element>
 
-		<element name='thisUpdate' parameter_type='output' data_type='string' gui_basic='1'
-			range_type='0'>
+		<element name="thisUpdate" parameter_type="output" data_type="string" gui_basic="1"
+			range_type="0">
 			<control_options>size:8</control_options>
 			<default_value />
 			<short_description>This Update</short_description>
@@ -98,8 +98,8 @@
 			</gui_type>
 		</element>
 
-		<element name='nextUpdate' parameter_type='output' data_type='string' gui_basic='1'
-			range_type='0'>
+		<element name="nextUpdate" parameter_type="output" data_type="string" gui_basic="1"
+			range_type="0">
 			<control_options>size:8</control_options>
 			<default_value />
 			<short_description>Next Update</short_description>
@@ -111,8 +111,8 @@
 			</gui_type>
 		</element>
 
-		<element name='expiryDays' parameter_type='output' data_type='integer' gui_basic='1'
-			range_type='0' units='days'>
+		<element name="expiryDays" parameter_type="output" data_type="integer" gui_basic="1"
+			range_type="0" units="days">
 			<control_options>size:8</control_options>
 			<default_value />
 			<short_description>Remaining Days to Expiry</short_description>

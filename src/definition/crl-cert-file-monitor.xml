@@ -125,5 +125,5 @@
 		</element>
 	</elements>
 
-	<help>Parse a CRL file and capture Days Till Expiry & other cert fields</help>
+	<help>Parse a CRL file and capture Days Till Expiry and other cert fields</help>
 </uptime>

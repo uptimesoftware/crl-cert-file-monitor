@@ -22,8 +22,12 @@
 			<default_value />
 			<short_description>URL or File path to CRL file</short_description>
 			<long_description>URL or File path to CRL file</long_description>
-			<validation_rule />
-			<error_message />
+			<validation_rule>
+				<alphanumeric />
+			</validation_rule>
+			<error_message>
+				<alphanumeric>required field</alphanumeric>
+			</error_message>
 			<gui_type>
 				<string />
 			</gui_type>
@@ -32,7 +36,7 @@
 		<element name='certVersion' parameter_type='output' data_type='string' gui_basic='1'
 			range_type='0'>
 			<control_options>size:8</control_options>
-			<default_value></default_value>
+			<default_value />
 			<short_description>Cert Version</short_description>
 			<long_description>Certificate Version</long_description>
 			<validation_rule />
@@ -45,7 +49,7 @@
 		<element name='certType' parameter_type='output' data_type='string' gui_basic='1'
 			range_type='0'>
 			<control_options>size:8</control_options>
-			<default_value></default_value>
+			<default_value />
 			<short_description>Cert Type</short_description>
 			<long_description>Certificate Type</long_description>
 			<validation_rule />
@@ -58,7 +62,7 @@
 		<element name='sigAlgName' parameter_type='output' data_type='string' gui_basic='1'
 			range_type='0'>
 			<control_options>size:8</control_options>
-			<default_value></default_value>
+			<default_value />
 			<short_description>Signature Algo Name</short_description>
 			<long_description>Signature Algorithm Name</long_description>
 			<validation_rule />
@@ -71,7 +75,7 @@
 		<element name='issuerName' parameter_type='output' data_type='string' gui_basic='1'
 			range_type='0'>
 			<control_options>size:8</control_options>
-			<default_value></default_value>
+			<default_value />
 			<short_description>Issuer Name</short_description>
 			<long_description>Issuer Details</long_description>
 			<validation_rule />
@@ -84,7 +88,7 @@
 		<element name='thisUpdate' parameter_type='output' data_type='string' gui_basic='1'
 			range_type='0'>
 			<control_options>size:8</control_options>
-			<default_value></default_value>
+			<default_value />
 			<short_description>This Update</short_description>
 			<long_description>Not Before Date</long_description>
 			<validation_rule />
@@ -97,7 +101,7 @@
 		<element name='nextUpdate' parameter_type='output' data_type='string' gui_basic='1'
 			range_type='0'>
 			<control_options>size:8</control_options>
-			<default_value></default_value>
+			<default_value />
 			<short_description>Next Update</short_description>
 			<long_description>Not After Date</long_description>
 			<validation_rule />
@@ -110,7 +114,7 @@
 		<element name='expiryDays' parameter_type='output' data_type='integer' gui_basic='1'
 			range_type='0' units='days'>
 			<control_options>size:8</control_options>
-			<default_value></default_value>
+			<default_value />
 			<short_description>Remaining Days to Expiry</short_description>
 			<long_description>Remaining Days to Expiry</long_description>
 			<validation_rule />

@@ -25,18 +25,18 @@ import com.uptimesoftware.uptime.plugin.monitor.MonitorState;
 import com.uptimesoftware.uptime.plugin.monitor.Parameters;
 
 /**
- * SSL Certificate Monitor
+ * CRL Cert File Monitor
  * 
  * @author uptime software
  */
-public class SSLCertificateMonitor extends Plugin {
+public class CRLCertFileMonitor extends Plugin {
 
 	/**
 	 * Constructor - a plugin wrapper.
 	 * 
 	 * @param wrapper
 	 */
-	public SSLCertificateMonitor(PluginWrapper wrapper) {
+	public CRLCertFileMonitor(PluginWrapper wrapper) {
 		super(wrapper);
 	}
 
@@ -50,10 +50,10 @@ public class SSLCertificateMonitor extends Plugin {
 	 * into the monitor's configuration page in Up.time.
 	 */
 	@Extension
-	public static class UptimeSSLCertificateMonitor extends PluginMonitor {
+	public static class UptimeCRLCertFileMonitor extends PluginMonitor {
 		// Logger object.
 		private static final Logger logger = LoggerFactory
-				.getLogger(UptimeSSLCertificateMonitor.class);
+				.getLogger(UptimeCRLCertFileMonitor.class);
 
 		// Inputs from Up.time.
 		private HashMap<String, Object> inputs = new HashMap<String, Object>();

@@ -1,1 +1,1 @@
-com.uptimesoftware.uptime.plugin.SSLCertificateMonitor$UptimeSSLCertificateMonitor
+com.uptimesoftware.uptime.plugin.CRLCertFileMonitor$UptimeCRLCertFileMonitor

@@ -7,28 +7,28 @@ import java.util.HashMap;
 
 import org.junit.Test;
 
-import com.uptimesoftware.uptime.plugin.SSLCertificateMonitor.UptimeSSLCertificateMonitor;
+import com.uptimesoftware.uptime.plugin.CRLCertFileMonitor.UptimeCRLCertFileMonitor;
 
-public class SSLCertificateMonitorTest {
+public class CRLCertFileMonitorTest {
 
 	// Inputs from Up.time.
 	private HashMap<String, Object> inputs = new HashMap<String, Object>();
 
 	@Test
 	public void test() {
-		UptimeSSLCertificateMonitor testInstance = new UptimeSSLCertificateMonitor();
+		UptimeCRLCertFileMonitor testInstance = new UptimeCRLCertFileMonitor();
 
 		String url = "http://crl.telecomputing.no/TeleComputing%20Norway%20Root%20Premium%20CA(1).crl";
-		inputs.put(UptimeSSLCertificateMonitor.PATH_TO_CRL, url);
+		inputs.put(UptimeCRLCertFileMonitor.PATH_TO_CRL, url);
 		X509CRL crl = testInstance.getX509CRLWithURL((String) inputs
-				.get(UptimeSSLCertificateMonitor.PATH_TO_CRL));
+				.get(UptimeCRLCertFileMonitor.PATH_TO_CRL));
 
 		assertNotNull(crl);
 
 		String filePath = "C:/Users/syoon/Desktop/TeleComputing Norway Root Premium CA.crl";
-		inputs.put(UptimeSSLCertificateMonitor.PATH_TO_CRL, filePath);
+		inputs.put(UptimeCRLCertFileMonitor.PATH_TO_CRL, filePath);
 		crl = testInstance.getX509CRLWithLocalFilePath((String) inputs
-				.get(UptimeSSLCertificateMonitor.PATH_TO_CRL));
+				.get(UptimeCRLCertFileMonitor.PATH_TO_CRL));
 
 		assertNotNull(crl);
 

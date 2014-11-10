@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>ssl-certificate-monitor</name>
+	<name>crl-cert-file-monitor</name>
 	<comment></comment>
 	<projects>
 	</projects>

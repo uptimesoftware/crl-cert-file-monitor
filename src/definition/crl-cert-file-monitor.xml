@@ -4,7 +4,7 @@
 	version="4.0" target_grouping="other">
 
 	<class>CRL Certificate Monitor</class>
-	<exec>JAVA_PLUGIN:UptimeSSLCertificateMonitor</exec>
+	<exec>JAVA_PLUGIN:UptimeCRLCertFileMonitor</exec>
 	<erdc_version>1.0</erdc_version>
 	<category>Network Service Monitors</category>
 	<category_related>Applications - Web Services</category_related>
